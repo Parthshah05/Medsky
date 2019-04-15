@@ -1,0 +1,65 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex':'none'">
+  <div class="flb">
+    <!-- <div class="Aligner-item Aligner-item--top">-->
+    <!--<img src="assets/imgs/a.png">-->
+    <h1 class="logo1">MEDSKY</h1>
+
+    <!--</div>-->
+  </div>
+</div>
+
+<ion-header>
+  <ion-navbar color="myapp1">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card (click)="onViewPrescription()">
+    <ion-card-header>
+      <ion-icon name="book" class="ionicons1"></ion-icon>  &nbsp; Read Prescription
+    </ion-card-header>
+    <ion-card-content>
+      Here you can view your all prescription and also doctors visited.
+    </ion-card-content>
+  </ion-card>
+  <!--<ion-card>
+    <ion-card-header>
+      <ion-icon name="body"  class="ionicons1"></ion-icon> View Doctors
+    </ion-card-header>
+    <ion-card-content>
+      Here you can view your all your doctors visited.
+    </ion-card-content>
+  </ion-card>
+-->
+  <ion-card (click)="onViewReminders()">
+    <ion-card-header>
+      <ion-icon name="alarm" class="ionicons1"></ion-icon> Add to Reminder
+    </ion-card-header>
+    
+    <ion-card-content>
+      Here you can add reminder for your medicines.
+    </ion-card-content>
+  
+  </ion-card>
+  <ion-card (click)="onSearch()">
+
+    <ion-card-header>
+      <ion-icon name="search" class="ionicons1 "></ion-icon> Search
+    </ion-card-header>
+  <ion-card-content>
+      Here you can search Medicines and Doctors both.
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="onChat()">
+    <ion-card-header>
+      <ion-icon name="chatbubbles" class="ionicons1"></ion-icon> Chat With Dr.Skala
+    </ion-card-header>
+    
+    <ion-card-content>
+      Here you can chat with our Artificial Agent Dr.Skala.
+      You can get many more information from here
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

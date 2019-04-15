@@ -1,0 +1,42 @@
+<ion-header>
+
+    <ion-navbar color="myapp1">
+        <ion-buttons end *ngIf="showSkip">
+            <button ion-button (click)="startApp()" color="primary"></button>
+          </ion-buttons>
+             <ion-title>Tutorial</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content padding class="masters">
+  <ion-slides pager>
+    <ion-slide>
+    <div class="row">
+
+    <div class="col">
+      <img src="../../assets/imgs/logo1.png" class="slide-image" style="height:250px;" />
+      <button ion-button icon-end (click)="onTutorialNext()" color="myapp1">
+          Skip
+          <ion-icon name="home"></ion-icon>
+        </button>
+      <h2 class="slide-title">Medsky</h2>
+      </div>
+    </div>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/mad.jpg" class="h" />
+      <h2 class="slide-title">Paper Less Prescription</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/y.jpg" class="slide-image" style="height:250px;" />
+      <h2 class="slide-title">Store Medical Information</h2>
+      <button ion-button icon-right (click)="onTutorialNext()">
+          Next
+          <ion-icon name="home"></ion-icon>
+        </button>  
+      <h2 class="slide-title"></h2>
+    </ion-slide>
+     
+  </ion-slides>
+</ion-content>
+
